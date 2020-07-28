@@ -1,0 +1,17 @@
+main: Drills
+name: Drills
+version: 0.1.1
+author: MuchDan
+api-version: 1.16
+softdepend:
+  - Jobs
+depend:
+  - Towny
+
+commands:
+  Drills:
+    description: Give a player a specifc drill
+    permission: Drills.Drills
+  Drill:
+    description: View aquidred drill balance.
+    permission: Drill.Drill

@@ -1,0 +1,617 @@
+#####################################
+##  Drills:
+##
+##  Created by: MuchDan
+##  Date: 6/3/20
+##
+#Job enables payment for using the drill
+Job: false
+Towny: false
+#################################################
+##Drills:
+##  TestDrill: (What you would use to spawn in the drill)
+##    Name: (The Name of the Item Spawned in)
+##    Material: (The type of drill [Shovel, Pickaxe, Axe?])
+##    Enchant: does the item have a Enchant effect when spawned in? (No enchantment assigned)
+##    Lore: Everything listed below the pickaxe in inventory. [Slot] allows mythic compatibility (String List)
+##    MineArea: Amount that the drill will mine. 3 means 3x3 area
+##    Block: Items that the drill is allowed to break. ##############THE FORMAT GOES 'MATERIAL:COST:EXP:QUANTITY'
+##    Translation: (Corresponds to Block list) what block turns into when mined without silk touch (String List)
+Drills:
+
+  TestDrill:
+    Name: '&cMagic Miner 3000'
+    Material: DIAMOND_PICKAXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    #Mine area Must be odd.
+    MineArea: 3
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
+
+  TestDrill2:
+    Name: '&bMagic Miner 6000'
+    Material: DIAMOND_PICKAXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 5x5 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 5
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
+
+  TestDrill3:
+    Name: '&bMagic Miner 9000'
+    Material: DIAMOND_PICKAXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 17x17 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 17
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
+
+  TestShovel:
+    Name: '&4Excavator 3000'
+    Material: DIAMOND_SHOVEL
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 3
+    Block:
+      - 'GRASS_BLOCK:1:1:1'
+      - 'DIRT:1:1:1'
+      - 'GRASS_PATH:1:1:1'
+      - 'SAND:1:1:1'
+      - 'SOUL_SAND:1:1:1'
+      - 'GRAVEL:1:1:1'
+    Translation:
+      - DIRT
+      - DIRT
+      - DIRT
+      - SAND
+      - SOUL_SAND
+      - GRAVEL
+  TestAxe:
+    Name: '&4Chopper 3000'
+    Material: DIAMOND_AXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 3
+    Block:
+      - 'ACACIA_LOG:1:1:1'
+      - 'STRIPPED_ACACIA_LOG:1:1:1'
+      - 'ACACIA_LEAVES:1:1:1'
+      - 'OAK_LOG:1:1:1'
+      - 'STRIPPED_OAK_LOG:1:1:1'
+      - 'OAK_LEAVES:1:1:1'
+      - 'BIRCH_LOG:1:1:1'
+      - 'STRIPPED_BIRCH_LOG:1:1:1'
+      - 'BIRCH_LEAVES:1:1:1'
+      - 'SPRUCE_LOG:1:1:1'
+      - 'STRIPPED_SPRUCE_LOG:1:1:1'
+      - 'SPRUCE_LEAVES:1:1:1'
+      - 'DARK_OAK_LOG:1:1:1'
+      - 'STRIPPED_DARK_OAK_LOG:1:1:1'
+      - 'DARK_OAK_LEAVES:1:1:1'
+      - 'JUNGLE_LOG:1:1:1'
+      - 'STRIPPED_JUNGLE_LOG:1:1:1'
+      - 'JUNGLE_LEAVES:1:1:1'
+    Translation:
+      - ACACIA_LOG
+      - STRIPPED_ACACIA_LOG
+      - STICK
+      - OAK_LOG
+      - STRIPPED_OAK_LOG
+      - STICK
+      - BIRCH_LOG
+      - STRIPPED_BIRCH_LOG
+      - STICK
+      - SPRUCE_LOG
+      - STRIPPED_SPRUCE_LOG
+      - STICK
+      - DARK_OAK_LOG
+      - STRIPPED_DARK_OAK_LOG
+      - STICK
+      - JUNGLE_LOG
+      - STRIPPED_JUNGLE_LOG
+      - STICK
+
+  Drill1:
+    Name: '&bTunneler'
+    Material: DIAMOND_PICKAXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    #Mine area Must be odd.
+    MineArea: 3
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
+
+  Drill2:
+    Name: '&cMatter Displacer'
+    Material: DIAMOND_PICKAXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 5x5 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 5
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
+
+  Drill3:
+    Name: '&4&lRoyal Drill of Gal Drazz'
+    Material: DIAMOND_PICKAXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 7x7 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 7
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
+
+  Shovel1:
+    Name: '&bSkimmer'
+    Material: DIAMOND_SHOVEL
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 3
+    Block:
+      - 'GRASS_BLOCK:1:1:1'
+      - 'DIRT:1:1:1'
+      - 'GRASS_PATH:1:1:1'
+      - 'SAND:1:1:1'
+      - 'SOUL_SAND:1:1:1'
+      - 'GRAVEL:1:1:1'
+    Translation:
+      - DIRT
+      - DIRT
+      - DIRT
+      - SAND
+      - SOUL_SAND
+      - GRAVEL
+  Shovel2:
+    Name: '&cExcavator'
+    Material: DIAMOND_SHOVEL
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - ''
+      - ''
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 5
+    Block:
+      - 'GRASS_BLOCK:1:1:1'
+      - 'DIRT:1:1:1'
+      - 'GRASS_PATH:1:1:1'
+      - 'SAND:1:1:1'
+      - 'SOUL_SAND:1:1:1'
+      - 'GRAVEL:1:1:1'
+    Translation:
+      - DIRT
+      - DIRT
+      - DIRT
+      - SAND
+      - SOUL_SAND
+      - GRAVEL
+  Shovel3:
+    Name: '&4&lGrave Digger'
+    Material: DIAMOND_SHOVEL
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 7
+    Block:
+      - 'GRASS_BLOCK:1:1:1'
+      - 'DIRT:1:1:1'
+      - 'GRASS_PATH:1:1:1'
+      - 'SAND:1:1:1'
+      - 'SOUL_SAND:1:1:1'
+      - 'GRAVEL:1:1:1'
+    Translation:
+      - DIRT
+      - DIRT
+      - DIRT
+      - SAND
+      - SOUL_SAND
+      - GRAVEL
+  TestAxe1:
+    Name: '&4Chopper 3000'
+    Material: DIAMOND_AXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 3
+    Block:
+      - 'ACACIA_LOG:1:1:1'
+      - 'STRIPPED_ACACIA_LOG:1:1:1'
+      - 'ACACIA_LEAVES:1:1:1'
+      - 'OAK_LOG:1:1:1'
+      - 'STRIPPED_OAK_LOG:1:1:1'
+      - 'OAK_LEAVES:1:1:1'
+      - 'BIRCH_LOG:1:1:1'
+      - 'STRIPPED_BIRCH_LOG:1:1:1'
+      - 'BIRCH_LEAVES:1:1:1'
+      - 'SPRUCE_LOG:1:1:1'
+      - 'STRIPPED_SPRUCE_LOG:1:1:1'
+      - 'SPRUCE_LEAVES:1:1:1'
+      - 'DARK_OAK_LOG:1:1:1'
+      - 'STRIPPED_DARK_OAK_LOG:1:1:1'
+      - 'DARK_OAK_LEAVES:1:1:1'
+      - 'JUNGLE_LOG:1:1:1'
+      - 'STRIPPED_JUNGLE_LOG:1:1:1'
+      - 'JUNGLE_LEAVES:1:1:1'
+    Translation:
+      - ACACIA_LOG
+      - STRIPPED_ACACIA_LOG
+      - STICK
+      - OAK_LOG
+      - STRIPPED_OAK_LOG
+      - STICK
+      - BIRCH_LOG
+      - STRIPPED_BIRCH_LOG
+      - STICK
+      - SPRUCE_LOG
+      - STRIPPED_SPRUCE_LOG
+      - STICK
+      - DARK_OAK_LOG
+      - STRIPPED_DARK_OAK_LOG
+      - STICK
+      - JUNGLE_LOG
+      - STRIPPED_JUNGLE_LOG
+      - STICK
+  TestAxe2:
+    Name: '&4Chopper 3000'
+    Material: DIAMOND_AXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 3
+    Block:
+      - 'ACACIA_LOG:1:1:1'
+      - 'STRIPPED_ACACIA_LOG:1:1:1'
+      - 'ACACIA_LEAVES:1:1:1'
+      - 'OAK_LOG:1:1:1'
+      - 'STRIPPED_OAK_LOG:1:1:1'
+      - 'OAK_LEAVES:1:1:1'
+      - 'BIRCH_LOG:1:1:1'
+      - 'STRIPPED_BIRCH_LOG:1:1:1'
+      - 'BIRCH_LEAVES:1:1:1'
+      - 'SPRUCE_LOG:1:1:1'
+      - 'STRIPPED_SPRUCE_LOG:1:1:1'
+      - 'SPRUCE_LEAVES:1:1:1'
+      - 'DARK_OAK_LOG:1:1:1'
+      - 'STRIPPED_DARK_OAK_LOG:1:1:1'
+      - 'DARK_OAK_LEAVES:1:1:1'
+      - 'JUNGLE_LOG:1:1:1'
+      - 'STRIPPED_JUNGLE_LOG:1:1:1'
+      - 'JUNGLE_LEAVES:1:1:1'
+    Translation:
+      - ACACIA_LOG
+      - STRIPPED_ACACIA_LOG
+      - STICK
+      - OAK_LOG
+      - STRIPPED_OAK_LOG
+      - STICK
+      - BIRCH_LOG
+      - STRIPPED_BIRCH_LOG
+      - STICK
+      - SPRUCE_LOG
+      - STRIPPED_SPRUCE_LOG
+      - STICK
+      - DARK_OAK_LOG
+      - STRIPPED_DARK_OAK_LOG
+      - STICK
+      - JUNGLE_LOG
+      - STRIPPED_JUNGLE_LOG
+      - STICK
+  TestAxe3:
+    Name: '&4Chopper 3000'
+    Material: DIAMOND_AXE
+    Enchant: false
+    Lore:
+      - ''
+      - '&7This Drill will mine a 3x3 area.'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7[&5Slot&7]'
+      - '&7Use an &6Ancient Scroll&7 to fill a [&5Slot&7]'
+    MineArea: 3
+    Block:
+      - 'ACACIA_LOG:1:1:1'
+      - 'STRIPPED_ACACIA_LOG:1:1:1'
+      - 'ACACIA_LEAVES:1:1:1'
+      - 'OAK_LOG:1:1:1'
+      - 'STRIPPED_OAK_LOG:1:1:1'
+      - 'OAK_LEAVES:1:1:1'
+      - 'BIRCH_LOG:1:1:1'
+      - 'STRIPPED_BIRCH_LOG:1:1:1'
+      - 'BIRCH_LEAVES:1:1:1'
+      - 'SPRUCE_LOG:1:1:1'
+      - 'STRIPPED_SPRUCE_LOG:1:1:1'
+      - 'SPRUCE_LEAVES:1:1:1'
+      - 'DARK_OAK_LOG:1:1:1'
+      - 'STRIPPED_DARK_OAK_LOG:1:1:1'
+      - 'DARK_OAK_LEAVES:1:1:1'
+      - 'JUNGLE_LOG:1:1:1'
+      - 'STRIPPED_JUNGLE_LOG:1:1:1'
+      - 'JUNGLE_LEAVES:1:1:1'
+    Translation:
+      - ACACIA_LOG
+      - STRIPPED_ACACIA_LOG
+      - STICK
+      - OAK_LOG
+      - STRIPPED_OAK_LOG
+      - STICK
+      - BIRCH_LOG
+      - STRIPPED_BIRCH_LOG
+      - STICK
+      - SPRUCE_LOG
+      - STRIPPED_SPRUCE_LOG
+      - STICK
+      - DARK_OAK_LOG
+      - STRIPPED_DARK_OAK_LOG
+      - STICK
+      - JUNGLE_LOG
+      - STRIPPED_JUNGLE_LOG
+      - STICK
+  World_Destroyer:
+    Name: '&cWorld Destroyer'
+    Material: DIAMOND_PICKAXE
+    Enchant: true
+    Lore:
+      - ''
+      - '&7This Drill will mine a 63x63 area.'
+    #Mine area Must be odd.
+    MineArea: 63
+    Block:
+      - 'STONE:1:1:1'
+      - 'ANDESITE:1:1:1'
+      - 'GRANITE:1:1:1'
+      - 'COAL_ORE:1:1:1'
+      - 'IRON_ORE:1:1:1'
+      - 'REDSTONE_ORE:1:1:1'
+      - 'GOLD_ORE:1:1:1'
+      - 'LAPIS_ORE:1:1:1'
+      - 'EMERALD_ORE:1:1:1'
+      - 'DIAMOND_ORE:1:1:1'
+      - 'NETHERRACK:1:1:1'
+      - 'NETHER_QUARTZ_ORE:1:1:1'
+      - 'DIORITE:1:1:1'
+    Translation:
+      - COBBLESTONE
+      - ANDESITE
+      - GRANITE
+      - COAL
+      - IRON_ORE
+      - REDSTONE
+      - GOLD_ORE
+      - LAPIS_LAZULI
+      - EMERALD
+      - DIAMOND
+      - NETHERRACK
+      - QUARTZ
+      - DIORITE
